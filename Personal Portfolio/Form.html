@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>New Form</title>
+	<link rel="stylesheet" href="Form.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tauri&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: black;
+	height: 100%;
+	width: 100%;
+}
+.container{
+	width: 350px;
+	height: 450px;
+	border: 1.5px solid;
+	border-radius: 1rem;
+	box-shadow: 6px 6px 6px black;
+	background-color: white;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+}
+.detail{
+	display: block;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+h3{
+	padding: 20px;
+	text-align: center;
+	text-decoration: underline solid ;
+	font-size: 25px;
+	color: #39bf3e;
+}
+li{
+	list-style: none;
+}
+.name{
+	display: flex;
+	font-size: 20px;
+}
+.username{
+	display: flex;
+	font-size: 21px;
+}
+.password{
+	display: flex;
+	font-size: 20px;
+}
+input{
+	width: 230px;
+	height: 30px;
+	margin: 10px 3px;
+	padding: 0px 10px;
+}
+.fa-solid{
+	margin: 5px;
+	margin-left: 25px;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 50%;
+	font-size: 1rem;
+}
+.fa-solid:hover{
+	background-color: #f0f1f2; 
+}
+.para{
+	display: flex;
+	padding-left: 70px; 
+	column-gap: 4px;
+	letter-spacing: 0.5px;
+}
+p{
+	 font-family: "Merienda", cursive;
+	 font-size: 10px;
+	 font-weight: bold;
+}
+.here{
+	color: #4f4ebd;
+	text-decoration: none;
+}
+.extra{
+	text-align: center;
+	margin-top: 15px;
+}
+.sign{
+	font-size: 12px;
+}
+.last{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 1.5rem;
+	padding: 5px 50px;
+}
+#ab{
+	border: 1.5px solid black;
+	height: 20px;
+	width: 35px;
+	text-align: center;
+	padding-top: 4px;
+	border-radius: 5px;
+	background-color: #e3e2de;
+	box-shadow: 3px 2px 3px black;
+}
+#bc{
+	border: 1.5px solid black;
+	height: 20px;
+	width: 35px;
+	text-align: center;
+	padding-top: 4px;
+	border-radius: 5px;
+	background-color: #e3e2de;
+	box-shadow: 3px 2px 3px black;
+}
+#cd{
+	border: 1.5px solid black;
+	height: 20px;
+	width: 35px;
+	text-align: center;
+	padding-top: 4px;
+	border-radius: 5px;
+	background-color: #e3e2de;
+	box-shadow: 3px 2px 3px black;
+}
+#ab:hover{
+	background-color: #f0efed;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px black;
+}
+#bc:hover{
+	background-color: #f0efed;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px black;
+}
+#cd:hover{
+	background-color: #f0efed;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px black;
+}
+.signup{
+	width: 120px;
+	height: 30px;
+	background-color: #51e948;
+	text-decoration: none;
+	border-style: none;
+	border-radius: 1rem;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 600;
+	box-shadow: -1px 1px 2px black;
+}
+.login{
+	width: 120px;
+	height: 30px;
+	background-color: #51e948;
+	text-decoration: none;
+	border-style: none;
+	border-radius: 1rem;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 600;
+	box-shadow: -1px 1px 2px black;
+}
+.signup:hover{
+	text-decoration: underline solid;
+	cursor: pointer;
+	font-family: sans-serif;
+	box-shadow: -2px 2px 3px black;
+}
+.login:hover{
+	text-decoration: underline solid;
+	cursor: pointer;
+	font-family: sans-serif;
+	box-shadow: -2px 2px 3px black;
+}
+.btn{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 25px;
+	padding: 0px 20px;
+}
+.shift{
+	padding: 0px 400px;
+}
+.fa-user::before {
+	content: "\f007";
+    height: 16px;
+    width: 16px;
+    margin: 1px 1px 1px 1px;
+}
+	</style>
+<div class="shift">
+	<div class="container">
+		<h3>Sign Up</h3>
+		<div class="detail">
+			<ol>
+				<div class="name">
+					<li> <i class="fa-solid fa-pen"></i>
+					<input type="Name" placeholder="Enter Your Name"></li>
+				</div>
+				<div class="username">
+					<li><i class="fa-solid fa-user"></i>
+					<input type="text" placeholder="Enter Username"></li>
+				</div>
+				<div class="password">
+					<li> <i class="fa-solid fa-key"></i>
+					<input type="password" placeholder="Enter Password"></li>
+				</div>
+			</ol>
+		</div>
+		<div class="para">
+			<p class="click">Forget Password </p>
+			<a href="#" class="here"><p> Click here</p></a>
+		</div>
+		<div class="extra">
+			<p class="sign">---------------------- Sign In With ----------------------</p>
+		</div>
+		<div class="last">
+				<li><i id="ab" class="fa-brands fa-google"></i></li>
+				<li><i id="bc" class="fa-brands fa-facebook-f"></i></li>
+				<li><i id="cd" class="fa-brands fa-apple"></i></li>
+		</div>
+		<div class="btn">
+			<button class ="signup" > Sign Up</button>
+			<button class ="login" > Login </button>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript" src="Form.js"></script>
+</body>
+</html>
